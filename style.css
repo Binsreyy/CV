@@ -1,20 +1,56 @@
-/* Body background color */
+
 body {
     background-color: #F7F7F7;
     font-family: Arial, sans-serif;
-    color: #854836; /* Text color */
+    color: #854836; 
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full height of the viewport */
+    min-height: 100vh;
 }
 
-/* Header styling */
+html, body {
+    height: 100%;  
+    margin: 0;    
+    overflow: hidden; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 30px;               
+    flex-wrap: wrap;          
+    height: 100vh;           
+}
+
+
+.cv {
+    flex: 0 0 250px;   
+    margin: 0 20px;    
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.rectangle {
+    display: flex; 
+    width: 250px;   
+    height: 150px; 
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+
+
 header {
-    background: #FFB22C; /* Gold color */
-    color: #000000; /* Black text */
-    padding: 40px 0;
+    background: #FFB22C; 
+    color: #000000; 
+    padding: 20px 0;
     text-align: center;
-    border-bottom: 4px solid #854836; /* Earthy border */
+    border-bottom: 4px solid #854836; 
 }
 
 header h1 {
@@ -26,57 +62,32 @@ header p {
     margin-top: 10px;
 }
 
-/* Styling for each CV */
+
 .cv {
     margin: 0 20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Rectangle container */
-/* Container for the CV images (parent container) */
-.container {
-    display: flex;
-    justify-content: center;  /* Center the .cv items horizontally */
-    align-items: center;      /* Center the .cv items vertically */
-    gap: 20px;                /* Space between each rectangle */
-    flex-wrap: wrap;          /* Allow wrapping of rectangles in smaller screens */
-}
 
-/* Styling for each CV */
-.cv {
-    margin: 0 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-/* Rectangle container */
-.rectangle {
-    display: flex; /* Use flexbox to create a side-by-side layout */
-    width: 300px; /* Set a fixed width for consistent size */
-    height: 200px; /* Adjust height as needed */
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: white; /* White background for the rectangle */
-}
-
-/* Image container (left half) */
 .image-container {
-    flex: 1; /* Take up 50% of the width */
+    flex: 1; 
     overflow: hidden;
-    border-top-left-radius: 15px; /* Rounded corners for the image side */
-    border-bottom-left-radius: 15px; /* Rounded corners for the image side */
-}
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; 
 
+}
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image covers the space without distortion */
+    object-fit: cover; 
+
 }
 
-/* Text container (right half) */
+
 .text-container {
-    flex: 1; /* Take up the other 50% of the width */
+    flex: 1; 
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -89,21 +100,21 @@ header p {
     font-size: 1.1rem;
 }
 
-/* Hover effect on CV images */
 .cv:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 
-/* Footer styling */
+
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #854836; /* Earthy brown footer */
+    background: #854836; 
     color: #fff;
     width: 100%;
-    margin-top: auto; /* This pushes the footer to the bottom */
+    margin-top: auto;
+
 }
 
 footer p {
