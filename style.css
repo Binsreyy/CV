@@ -219,6 +219,7 @@ footer p {
 .upper-part > * {
     position: relative; /* Position child elements above the overlay */
     z-index: 2; /* Ensure text is above the overlay */
+    text-align: center;
 }
 
 .profile-container {
@@ -352,15 +353,31 @@ footer p {
 .job h3 {
     margin: 0;
     font-size: 20px;
+    margin-right: 40px;
 }
 
-.job span {
-    font-weight: bold;
-    display: block;
-    margin: 5px 0;
-}
+
 
 .job p {
-    margin: 5px 0 0;
+    margin: 20px 0 0;
     font-size: 14px;
+}
+
+.contactlogos {
+    display: flex; /* Use Flexbox to arrange items in a row */
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Center the logos vertically */
+    margin-top: 20px; /* Add some space above the logos */
+}
+
+.contactlogo {
+    margin: 0 1px;
+    background: transparent;/* Maintain aspect ratio */
+    /* Add horizontal spacing between logos */
+}
+
+.company-logo {
+    width: 50px; /* Set a fixed width for the logos */
+    height: auto; 
+    background: transparent;/* Maintain aspect ratio */
 }
