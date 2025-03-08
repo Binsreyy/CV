@@ -342,8 +342,11 @@ footer p {
     display: flex;
     align-items: center;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
+
+
 
 .company-logo {
     width: 40px; /* Adjust logo size */
