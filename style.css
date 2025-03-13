@@ -42,11 +42,11 @@ html, body {
 }
 header {
     width: 100%; 
-    background: #FFB22C;
+    background: #DCD7C9;
     color: #000000;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 4px solid #854836;
+    border-bottom: 4px solid #2C3930;
 }
 
 header h1 {
@@ -143,7 +143,7 @@ header p {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #854836;
+    background: #2C3930;
     color: #fff;
     width: 100%;
     margin-top: auto;
@@ -179,7 +179,7 @@ footer p {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
-    background-color: #4CAF50;
+    background-color: #A27B5C;
     box-sizing: border-box; 
 }
 
@@ -284,7 +284,7 @@ footer p {
 .footer2 {
     text-align: center;
     padding: 20px;
-    background-color: #333; 
+    background-color: #2C3930; 
     color: white;
     margin-top: 20px; 
 }
