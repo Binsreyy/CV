@@ -14,7 +14,7 @@ html, body {
 }
 
 .body2 {
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
 }
 .container {
     display: flex;
@@ -41,7 +41,7 @@ html, body {
     overflow: hidden;       
 }
 header {
-    width: 100%; /* Full width of the screen */
+    width: 100%; 
     background: #FFB22C;
     color: #000000;
     padding: 20px 0;
@@ -60,32 +60,32 @@ header p {
 
 
 .upper-section {
-    position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
+    position: relative; 
     display: flex;
     flex-direction: row;
     padding: 15px;
-    overflow: hidden; /* Prevent overflow of the pseudo-element */
-    background-image: url('bg.jpg'); /* Set your background image */
-    background-size: cover; /* Ensure the background image covers the entire section */
-    background-position: center; /* Center the background image */
+    overflow: hidden; 
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 
 .upper-section::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position it absolutely within the parent */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    bottom: 0; /* Align to the bottom */
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
-    backdrop-filter: blur(5px); /* Apply blur effect */
-    z-index: 1; /* Ensure it is below the text but above the background */
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1; 
 }
 
 .image-container,
 .text-container {
-    position: relative; /* Position child elements above the overlay */
-    z-index: 2; /* Ensure text and image are above the overlay */
+    position: relative; 
+    z-index: 2; 
 }
 
 .image-container {
@@ -179,8 +179,8 @@ footer p {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
-    background-color: #4CAF50; /* Example background color */
-    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #4CAF50;
+    box-sizing: border-box; 
 }
 
 .uppernav nav a {
@@ -190,103 +190,103 @@ footer p {
 }
 
 .upper-part {
-    position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
-    background-image: url('bg.jpg'); /* Replace with your background image */
+    position: relative; 
+    background-image: url('bg.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the background image */
+    background-position: center; 
     color: white;
     text-align: center;
-    padding: 100px 20px; /* Adjust as needed */
+    padding: 100px 20px;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack vertically */
-    overflow: hidden; /* Prevent overflow of the pseudo-element */
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    overflow: hidden; 
 }
 
 .upper-part::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position it absolutely within the parent */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    bottom: 0; /* Align to the bottom */
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
-    backdrop-filter: blur(5px); /* Apply blur effect */
-    z-index: 1; /* Ensure it is below the text but above the background */
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    z-index: 1; 
 }
 
 .upper-part > * {
-    position: relative; /* Position child elements above the overlay */
-    z-index: 2; /* Ensure text is above the overlay */
+    position: relative; 
+    z-index: 2; 
     text-align: center;
 }
 
 .profile-container {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .profile-image {
-    width: 200px; /* Set your desired width */
-    height: 200px; /* Set your desired height */
-    border-radius: 50%; /* This creates a circle */
-    object-fit: cover; /* Ensures the image covers the entire area */
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
     object-position: center;
-    border: 5px solid rgb(20, 77, 20); /* Optional: adds a border around the circle */
+    border: 5px solid rgb(20, 77, 20); 
 }
 
 .lower-part {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the start */
-    padding: 50px 20px; /* Adjust padding as needed */
-    background-color: rgb(248, 248, 248); /* Set a background color */
-    border-top: 1px solid #ccc; /* Optional: add separation */
+    align-items: flex-start; 
+    padding: 50px 20px; 
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid #ccc; 
 }
 
 .lower-part2 {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    padding: 50px 20px; /* Adjust padding as needed */
-    background-color: rgb(248, 248, 248); /* Set a background color */
-    border-top: 1px solid #ccc; /* Optional: add separation */
+    flex-direction: column; 
+    padding: 50px 20px; 
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid #ccc;
 }
 
 .about, .basic-info {
-    width: 530px; /* Set a fixed width for the square */
-    height: 300px; /* Set a fixed height for the square */
-    padding: 20px; /* Add padding for content */
-    background-color: white; /* Background color */
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    display: flex; /* Use flexbox for centering content */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    width: 530px; 
+    height: 300px; 
+    padding: 20px; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .basic-info ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .basic-info li {
-    margin: 10px 0; /* Add margin between items */
+    margin: 10px 0; 
 }
 
 .basic-info li span {
-    font-weight: bold; /* Make the label bold */
+    font-weight: bold; 
 }
 
 .footer2 {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Example footer color */
+    background-color: #333; 
     color: white;
-    margin-top: 20px; /* Add some space above the footer */
+    margin-top: 20px; 
 }
 
 .skills {
@@ -295,25 +295,25 @@ footer p {
 }
 
 .skill-item {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 10px; /* Space between skill items */
-    width: 100%; /* Ensure it takes full width */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    width: 100%; 
 }
 
 .progress-container {
-    flex-grow: 1; /* Allow the progress container to grow */
-    background-color: #e0e0e0; /* Light gray background */
-    border-radius: 25px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow */
-    margin-left: 10px; /* Space between label and progress bar */
+    flex-grow: 1;
+    background-color: #e0e0e0; 
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 10px; 
 }
 
 .progress-bar {
-    height: 20px; /* Height of the progress bar */
-    background-color: #4CAF50; /* Green color for the progress */
-    width: 70%; /* Set the width to 70% */
-    transition: width 0.5s; /* Smooth transition for width change */
+    height: 20px; 
+    background-color: #4CAF50; 
+    width: 70%; 
+    transition: width 0.5s; 
 }
 
 
@@ -341,7 +341,7 @@ footer p {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -349,7 +349,7 @@ footer p {
 
 
 .company-logo {
-    width: 40px; /* Adjust logo size */
+    width: 40px; 
     margin-right: 15px;
 }
 
@@ -367,20 +367,20 @@ footer p {
 }
 
 .contactlogos {
-    display: flex; /* Use Flexbox to arrange items in a row */
-    justify-content: center; /* Center the logos horizontally */
-    align-items: center; /* Center the logos vertically */
-    margin-top: 20px; /* Add some space above the logos */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px; 
 }
 
 .contactlogo {
     margin: 0 1px;
-    background: transparent;/* Maintain aspect ratio */
-    /* Add horizontal spacing between logos */
+    background: transparent;
+   
 }
 
 .company-logo {
-    width: 50px; /* Set a fixed width for the logos */
+    width: 50px;
     height: auto; 
-    background: transparent;/* Maintain aspect ratio */
+    background: transparent;
 }
